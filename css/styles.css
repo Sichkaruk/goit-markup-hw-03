@@ -66,20 +66,16 @@ p {
 }
 
 /* Header */
-.container .main__nav {
-  display: flex;
+
+.header {
+  border: 1px solid #ececec;
 }
 
-.nav .main__nav {
-  display: flex;
-}
 .main__nav {
+  display: flex;
   align-items: center;
 }
 
-.nav__list__container {
-  display: flex;
-}
 .auth__nav {
   display: flex;
   margin-left: auto;
@@ -89,17 +85,17 @@ p {
   margin-right: 0;
 }
 
-.nav-list .nav__list__item {
+.nav__list__item {
   margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-list .nav__list__item:last-child {
+.nav__list__item:last-child {
   margin-right: 0;
 }
 
 .nav-list,
-.header .auth__nav {
+.auth__nav {
   font-size: 14px;
   line-height: 1.143;
   font-weight: 500;
@@ -267,13 +263,16 @@ p {
 }
 
 .team__list {
-  background: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  background: var(--soft-grey);
+}
+
+.team__card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .card__title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -293,12 +292,20 @@ p {
   text-align: center;
   color: var(--grey-color);
 }
+
+.card__text {
+  margin: 30px auto;
+}
+
 /* Our Team */
 
 /* Footer */
 
 .footer {
   background: var(--dark-grey);
+  padding-top: 60px;
+}
+.footer__content {
 }
 
 .logo-footer {
@@ -308,6 +315,17 @@ p {
   line-height: 31px;
   color: var(--pretty-color);
   text-decoration: none;
+}
+.logo-footer-content {
+  margin-bottom: 20px;
+}
+
+.address-list {
+  margin-bottom: 9px;
+}
+
+.address-list:last-child {
+  margin-bottom: 0;
 }
 
 .studio {
@@ -319,6 +337,10 @@ p {
   line-height: 1.714;
   color: var(--white-color);
 }
+.address-item {
+  padding-bottom: 60px;
+}
+
 .footer .link {
   font-style: normal;
   font-weight: normal;
@@ -385,6 +407,8 @@ p {
   margin-bottom: 30px;
   background: var(--white-color);
   border: 1px solid var(--card-border-color);
+}
+.project__card__img {
 }
 
 .project__card:nth-child(-n + 3) {
