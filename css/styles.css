@@ -148,8 +148,10 @@ p {
 .hero {
   background-color: var(--dark-grey);
   text-align: center;
+  padding: 200px 0;
 }
 .hero__caption {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -158,12 +160,8 @@ p {
   text-transform: uppercase;
 
   color: var(--white-color);
-  padding-top: 200px;
-  padding-bottom: 30px;
 }
-.hero__full__container {
-  padding-bottom: 200px;
-}
+
 .button {
   color: inherit;
   font-family: inherit;
@@ -183,6 +181,7 @@ p {
   border-radius: 4px;
   background-color: var(--pretty-color);
   display: inline-block;
+  padding: 10px 32px;
 }
 
 .button-hero:hover,
@@ -294,7 +293,8 @@ p {
 }
 
 .card__text {
-  margin: 30px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Our Team */
@@ -304,8 +304,7 @@ p {
 .footer {
   background: var(--dark-grey);
   padding-top: 60px;
-}
-.footer__content {
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -336,9 +335,6 @@ p {
   font-style: normal;
   line-height: 1.714;
   color: var(--white-color);
-}
-.address-item {
-  padding-bottom: 60px;
 }
 
 .footer .link {
@@ -380,7 +376,6 @@ p {
   letter-spacing: 0.03em;
   background-color: var(--soft-grey);
   border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: var(--while-color);
 }
 
@@ -390,6 +385,7 @@ p {
   background-color: var(--pretty-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* filters */
@@ -440,7 +436,7 @@ p {
 
 .project__card__text {
   align-items: center;
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 /* projects */
